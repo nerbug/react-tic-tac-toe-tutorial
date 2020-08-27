@@ -105,8 +105,10 @@ class Game extends React.Component {
         });
 
         let status;
-        if(winner) {
+        if(winner && winner !== "draw") {
             status = "Winner: " + winner;
+        } else if (winner === "draw") {
+            status = "Draw!";
         } else {
             status = "Next player: " + (this.state.xIsNext ? 'X' : 'O');
         }
@@ -150,5 +152,10 @@ function calculateWinner(squares) {
         }
     }
 
-    return null;
+    if(squares.find(element => element == null) === undefined) {
+        // the board is full and there are no winners, declare a draw
+        return "draw";
+    }
+
+    return null;    // nobody has won yet
 }
