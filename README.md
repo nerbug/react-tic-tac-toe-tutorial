@@ -7,8 +7,8 @@ A game of tic-tac-toe implemented using [React](https://reactjs.org) and this [t
 ```bash
 # Install dependencies (React, ReactDOM, etc.)
 npm install
-# Run app
-npm run
+# Start app
+npm start
 ```
 
 Then, open ```localhost:3000``` in your browser of choice (if it wasn't opened automatically).
