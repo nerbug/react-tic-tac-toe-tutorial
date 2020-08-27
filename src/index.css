@@ -48,3 +48,14 @@ ol, ul {
 .game-info {
     margin-left: 20px;
 }
+
+.game-info button {
+    border-radius: 5px;
+    border: none;
+    background: #0275d8;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
